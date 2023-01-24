@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Replacer</title>
+  </head>
+  <body>
+    <h1>Text Replacer</h1>
+    <form method="post" action="">
+      <label for="text_to_replace">Text to Replace:</label>
+      <input type="text" id="text_to_replace" name="text_to_replace"><br>
+      <label for="replaced_text">Replaced Text:</label>
+      <input type="text" id="replaced_text" name="replaced_text"><br>
+      <input type="submit" value="Replace and Download">
+    </form>
+    <a href="{{ url_for('download_docx') }}" download>Download Modified Docx</a><br>
+    <a href="{{ url_for('download_pdf') }}" download>Download Modified PDF</a>
+  </body>
+</html>

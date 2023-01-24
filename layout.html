@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block head %}{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href='/'>Home</a></li>
+            <!-- <li><a href='/load_file'>Load File</a></li> -->
+            <li><a href='/addreplacement'>Add Replacement</a></li>
+            <li><a href='/load_template'>Load Template</a></li>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
